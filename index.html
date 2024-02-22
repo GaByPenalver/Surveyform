@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>blesssurveyform</title>
+</head>
+
+<body>
+    <h1 id="title">Bless survey form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name"> <br>
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"> <br>
+
+        <label for="number" id="number-label">Number:</label>
+        <input type="number" id="number" name="number" min="1" max="100" placeholder="Enter your number"> <br>
+
+        <label for="dropdown" id="dropdown-label">Choose an option:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+        <br>
+
+        <label id="checkbox-group-label">Select an option:</label>
+        <div id="checkbox-group">
+            <input type="checkbox" id="option1" name="options" value="option1">
+
+            <label for="option1">Option 1</label><br>
+
+            <input type="checkbox" id="option2" name="options" value="option2">
+            <label for="option2">Option 2</label><br>
+
+            <input type="checkbox" id="option3" name="options" value="option3">
+            <label for="option3">Option 3</label>
+        </div><br>
+        <label id="radio-group-label">Select one of the following:</label>
+        <div id="radio-group">
+            <input type="radio" id="radio1" name="radio-group" value="radio-option1">
+            <label for="radio1">Radio Option 1</label>
+            <br>
+
+            <input type="radio" id="radio2" name="radio-group" value="radio-option2">
+            <label for="radio2">Radio Option 2</label>
+            <br>
+        </div>
+        <br>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50">Enter your comment here...</textarea><br>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
